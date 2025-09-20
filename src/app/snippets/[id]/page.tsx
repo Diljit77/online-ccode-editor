@@ -12,6 +12,7 @@ import { defineMonacoThemes, LANGUAGE_CONFIG } from '@/app/(root)/_constants';
 import CopyButton from '../_components/CopyButton';
 import Comments from '../_components/Comments';
 
+
 function SnippetDetailPage() {
     const snippetId=useParams().id;
     const snippet=useQuery(api.snippets.getSnippetById,{snippetId:snippetId as Id<"snippets">});

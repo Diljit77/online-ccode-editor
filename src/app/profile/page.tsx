@@ -24,7 +24,7 @@ const TABS = [
     icon: Star,
   },
 ];
-function page() {
+function Profilepage() {
     const {user,isLoaded}=useUser();
     const router=useRouter();
     const [activeTab,setActiveTab]=useState<"executions"|"starred">("executions");
@@ -277,4 +277,4 @@ if(!user && isLoaded) return router.push("/");
   );
 }
 
-export default page
+export default Profilepage;

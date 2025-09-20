@@ -6,10 +6,9 @@ import SnippetsPageSkeleton from './_components/SnippetsPageSkeleton';
 import NavigationHeader from '@/components/NavigationHeader';
 import { BookOpen, Code, Grid, Layers, Search, Tag, X } from 'lucide-react';
 import {AnimatePresence, motion} from "framer-motion"
-import { label } from 'framer-motion/client';
 import SnippetCard from './_components/SnippetCard';
 
-function page() {
+function Snippetpage() {
     const snippets=useQuery(api.snippets.getSnippets);
     const [searchQuery,setSearchQuery]=useState("");
     const [selectedLanguage,setSelectedLanguage]=useState<string | null>(null);
@@ -212,4 +211,4 @@ function page() {
   )
 }
 
-export default page
+export default Snippetpage

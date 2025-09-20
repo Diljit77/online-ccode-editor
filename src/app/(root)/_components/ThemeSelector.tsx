@@ -19,15 +19,19 @@ function ThemeSelector() {
     const dropdownRef=useRef<HTMLDivElement>(null);
     const currentTheme=THEMES.find((t)=>t.id===theme);
     const mounted=useMounted();
-    useEffect(()=>{
-const handleClickOutside=(event:MouseEvent)=>{
-    if(dropdownRef.current && dropdownRef.current.contains(event.target as Node)){
-        setIsOpen(false);
+useEffect(() => {
+  const handleClickOutside = (event: MouseEvent) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      setIsOpen(false);
     }
-    document.addEventListener("mousedown",handleClickOutside);
-    return ()=>document.removeEventListener("mousedown",handleClickOutside);
-}
-    },[]);
+  };
+
+  document.addEventListener("mousedown", handleClickOutside);
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, []);
+
     if(!mounted) return null;
   return (
     <div className="relative" ref={dropdownRef}>
