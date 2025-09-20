@@ -1,5 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Online Code Editor
 
+**Name:** Online Code Editor  
+
+
+---
+
+## Description
+
+Online Code Editor is a modern, web-based code editor / snippet manager built with Next.js and Convex. It supports multiple languages/themes, allows users to execute or star snippets, view history/executions, comments, etc. It’s designed for interactive snippet sharing & managing code with nice UI/UX.  
+
+---
+
+## Demo
+
+Check the live version here:  
+[https://online-ccode-editor.vercel.app](https://online-ccode-editor.vercel.app/)  
+
+---
+
+## Screenshots
+
+
+
+| Editor View | Snippet Detail / Profile |
+|-------------|---------------------------|
+| <img width="1874" height="907" alt="image" src="https://github.com/user-attachments/assets/efb5baf6-0079-406f-85cf-d0984ee560fa" /> | <img width="1871" height="909" alt="image" src="https://github.com/user-attachments/assets/5f21217c-8bdb-4e27-ad4c-c18260862290" /> |
+
+---
+
+## Tech Stack
+
+- **Frontend / Framework:** Next.js (app router), React  
+- **Server / Backend / API:** Convex (convex/react)  
+- **Styling:** Tailwind CSS  
+- **State Management / Store:** Zustand or a custom store (`useCodeEditorStore`)  
+- **Icons:** Lucide React  
+- **Code Editor:** Monaco Editor (`@monaco-editor/react`)  
+- **Other:** Framer Motion for animations  
+
+---
+
+## Features
+
+- Theme selection & syntax highlighting  
+- Language selection and locked access for some languages  
+- Snippet execution history & pagination  
+- Star / favorite snippets  
+- Comments on snippets  
+- Responsive UI  
+
+---
 ## Getting Started
 
 First, run the development server:
@@ -13,24 +63,10 @@ pnpm dev
 # or
 bun dev
 ```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Developed by:** Daljit Singh  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
